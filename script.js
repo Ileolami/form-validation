@@ -4,6 +4,8 @@ const submitBtn = document.getElementById('submitBtn').addEventListener('click',
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
         const passwordConfirm = document.getElementById('confirmpassword').value;
+const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
         if (name == "" && email == "" && password == "" && confirmpassword == "") {
             alert("Please fill the form");
         }
@@ -12,6 +14,9 @@ const submitBtn = document.getElementById('submitBtn').addEventListener('click',
         }
         else if (email == "") {
             alert("Please enter your email");
+else if (email.match(validRegex)){
+alert("Not Correct email format")
+}
         }
         else if (password == "") {
             alert("Please enter your password");
