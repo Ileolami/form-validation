@@ -14,8 +14,8 @@ const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0
         }
         else if (email == "") {
             alert("Please enter your email");
-else if (email.match(validRegex)){
-alert("Not Correct email format")
+        else if (email.match(validRegex)){
+alert("Not Correct email format");
 }
         }
         else if (password == "") {
