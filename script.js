@@ -1,6 +1,7 @@
 const submitBtn = document.getElementById('submitBtn').addEventListener('click', function (e) {
         const form = document.getElementById('myform');
         const name = document.getElementById('name').value;
+const username = document.getElementById
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
         const passwordConfirm = document.getElementById('confirmpassword').value;
