@@ -1,0 +1,45 @@
+
+
+<h2>JavaScript Validation</h2>
+
+<p>Please input a number between 1 and 10:</p>
+<form action="https://w3schools.com/" id="myform">
+password:<input id="numb" placeholder="enter pword"></br>
+confirm password:<input id ="num" placeholder="enter pword"></br>
+
+<button type="button" id="submitbtn">Submit</button>
+</form>
+<p id="demo"></p>
+
+<script>
+const submitBtn = document.getElementById('submitbtn').addEventListener('click', e => {
+  // Get the value of the input field with id="numb"
+  let v = document.getElementById("myform");
+  let x = document.getElementById("numb").value;
+  let y = document.getElementById("num").value;
+  console.log(v, x, y);
+  // If x is Not a Number or less than one or greater than 10
+ if (x == "" && y == ""){
+ alert('enter password');
+ return false;
+ }
+ else if (x.length > 6 && y.length > 6){
+ alert('password must be in six character');
+ return false;
+ }
+ else if (x !== y){
+ alert ('the password must be the same');
+ return false;
+ }
+ else{
+//   window.location="https://w3schools.com/";
+alert ('login is correct');
+v.submit();
+  return true;
+ }
+});
+</script>
+
+</body>
+</html> 
+
