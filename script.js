@@ -16,6 +16,7 @@ const submitBtn = document.getElementById('submitBtn').addEventListener('click',
         else if (password == "") {
             alert("Please enter your password");
         }
+        es
         else if (passwordConfirm== "") {
             alert("Please enter your confirm password");
         }
