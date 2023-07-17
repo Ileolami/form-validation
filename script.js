@@ -40,3 +40,29 @@ const submitBtn = document.getElementById('submitBtn').addEventListener('click',
             form.submit();
         }
     } );
+    const passwordEye = document.getElementById('passwordeye')
+    passwordEye.addEventListener('click', function (e) {
+        if (password.type == "password"){
+                password.type = "text";
+            passwordEye.classList.remove('fa-eye');
+             passwordEye.classList.add('fa-eye-slash');
+        }
+        else {
+            password.type = "password";
+            passwordEye.classList.remove('fa-eye-slash');
+            passwordEye.classList.add('fa-eye');
+        }
+    });
+    const passwordEyeTwo = document.getElementById('passwordeye2')
+    passwordEyeTwo.addEventListener('click', function (e) {
+        if (confirmpassword.type == "password") {
+            confirmpassword.type = "text";
+            passwordEyeTwo.classList.remove('fa-eye');
+            passwordEyeTwo.classList.add('fa-eye-slash');
+        }
+        else {
+            confirmpassword.type = "password";
+            passwordEyeTwo.classList.remove('fa-eye-slash');
+            passwordEyeTwo.classList.add('fa-eye');
+        }
+    });
